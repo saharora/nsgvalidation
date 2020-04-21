@@ -99,7 +99,7 @@ def validate_sg():
                                 else:
                                     print(f'Failure: rule {tf_sec_resource} in {tf_file}: exposed to internet.')        # noqa
                                     bad_rule += 1
-                            elif rule_param['direction'].lower() == 'inbound' and rule_param['access'].lower() == 'deny':# noqa
+                            elif rule_param['direction'].lower() == 'inbound' and rule_param['access'].lower() == 'deny': # noqa
                                 print(f'Warning Deny rule defined in {tf_file}')
 
     """

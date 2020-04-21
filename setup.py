@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
 setuptools.setup(
      name='nsgvalidation',  
      version='0.2',
-     scripts=['nsgvalidation'] ,
+     scripts=['checknsg'] ,
      author="Sahil Arora",
      author_email="saharora@ciena.com",
      description="A Utility package for Azure NSG validation",
