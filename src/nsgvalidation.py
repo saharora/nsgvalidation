@@ -12,11 +12,6 @@ import os
 import hcl
 
 
-"""
-A list of the rules for NSG validation
-"""
-main_keys = ['direction', 'access', 'source_address_prefixes']
-
 # #################VARIABLES#######################
 sec_rule = 'azurerm_network_security_rule'
 scope = 'source_address_prefix'
@@ -37,11 +32,11 @@ def read_ignorefile(pathname, file_ignore):
     list_of_sg_rules_ignored = []
     try:
         with open(pathname + '/' + file_ignore, 'r') as fp:
-            list_of_sg_rules_ignored = [line.rstrip('\n') for line in fp]
+            for line in fp:
+                list_of_sg_rules_ignored.append(line.rstrip('\n'))
     except FileNotFoundError:
         pass
     return list_of_sg_rules_ignored
-
 
 def scan_tf_files(pathname):
     """

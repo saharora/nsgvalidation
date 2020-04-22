@@ -1,7 +1,4 @@
 from setuptools import setup
-import setuptools
-with open("README.md", "r") as fh:
-    long_description = fh.read()
 setup(
      name='nsgvalidation',  
      version='0.2',
@@ -10,6 +7,10 @@ setup(
      author="Sahil Arora",
      author_email="saharora@ciena.com",
      description="A Utility package for Azure NSG validation",
+     install_requires = [
+         "pyhcl>=0.4.2",
+         "glob3",
+     ],
      classifiers=[
          "Programming Language :: Python :: 3",
          "Programming Language :: Python :: 3.5",
