@@ -1,0 +1,8 @@
+README.md
+setup.py
+nsgvalidation/nsgvalidation.py
+nsgvalidation/nsgvalidation.egg-info/PKG-INFO
+nsgvalidation/nsgvalidation.egg-info/SOURCES.txt
+nsgvalidation/nsgvalidation.egg-info/dependency_links.txt
+nsgvalidation/nsgvalidation.egg-info/requires.txt
+nsgvalidation/nsgvalidation.egg-info/top_level.txt

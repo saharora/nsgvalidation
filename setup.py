@@ -1,9 +1,9 @@
 from setuptools import setup
 setup(
      name='nsgvalidation',  
-     version='0.2',
+     version='0.4',
      py_modules=["nsgvalidation"] ,
-     package_dir={'': '.'},
+     package_dir={'': 'nsgvalidation'},
      author="Sahil Arora",
      author_email="saharora@ciena.com",
      description="A Utility package for Azure NSG validation",
