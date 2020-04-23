@@ -11,6 +11,14 @@ import os
 
 import hcl
 
+import warnings
+
+def fxn():
+    warnings.warn("deprecated", DeprecationWarning)
+
+with warnings.catch_warnings():
+    warnings.simplefilter("ignore")
+    fxn()
 
 # #################VARIABLES#######################
 sec_rule = 'azurerm_network_security_rule'

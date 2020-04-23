@@ -3,12 +3,12 @@ setup(
      name='nsgvalidation',  
      version='0.2',
      py_modules=["nsgvalidation"] ,
-     package_dir={'': 'src'},
+     package_dir={'': '.'},
      author="Sahil Arora",
      author_email="saharora@ciena.com",
      description="A Utility package for Azure NSG validation",
      install_requires = [
-         "pyhcl>=0.4.2",
+         "pyhcl==0.4.2",
          "glob3",
      ],
      classifiers=[
